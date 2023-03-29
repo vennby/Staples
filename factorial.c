@@ -19,7 +19,8 @@ int main()
 	return 0;
 }	
 
-An alteration of this code includes printing the factorial values of all the numbers that lead upto the user-input value. This can be done by simply placing the final 'printf' command inside the first loop, and by replacing 'n' with 'i'.
+An alteration of this code includes printing the factorial values of all the numbers that lead upto the user-input value. 
+This can be done by simply placing the final 'printf' command inside the first loop, and by replacing 'n' with 'i'.
 
 #include <stdio.h>
 
