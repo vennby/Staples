@@ -13,7 +13,7 @@ int main()
     scanf("%d", &days);
     
     printf("\n Enter 1 for bus, 2 for metro, 3 for cab: ");
-    scanf("%d", %mode);
+    printf("\n");
    
     float distance, sum=0;
     
