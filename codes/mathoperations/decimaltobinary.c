@@ -15,6 +15,7 @@ int main()
         n=n/2;
     }
     
+    printf("\n The binary equivalent of %d = ", dec);
     for(j=(i-1);j>=0;j--)
     {
         printf("%d", arr[j]);
