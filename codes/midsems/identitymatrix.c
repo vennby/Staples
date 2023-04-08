@@ -42,19 +42,19 @@ int main()
     {
         for(j=0;j<c;j++)
         {
-            if(i==j)
+            if(i==j)            //if-condition to check the diagonal elements
             {
-                if(a[i][j]!=1)
+                if(a[i][j]!=1)  //if the diagonal element is anything but 1, flag=0, loop is broken
                 {
                     flag=0;
                     break;
                 }   
             }
-            else
+            else                //else-condition to check the non-diagonal elements
             {
                 if (a[i][j]!=0)
                 {
-                    flag=0;
+                    flag=0;     //if the diagonal element is anything but 0, flag=0, loop is broken
                     break;
                 }
             }
