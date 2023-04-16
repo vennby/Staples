@@ -11,15 +11,24 @@ int main()
     {    
         if(n%i==0)    
         { 
-            printf("\n %d is not prime.", n); 
-            printf("\n The smallest number it is divisible by is %d.", i);    
+            printf("\n %d is not prime. \n", n);
             flag=1;    
             break;
         }    
-    }    
+    }
     
     if(flag==0)    
-    printf("\n %d is prime.", n);     
+    printf("\n %d is prime.", n);
+    else
+    {
+        printf("\n The factors of %d are: 1 %4d", n, n);
+        
+        for(i=2;i<=n/2;i++)
+        {
+            if(n%i==0)
+            printf("%4d", i);
+        }
+    }
     
     return 0;  
  } 
