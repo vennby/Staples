@@ -2,14 +2,21 @@
 
 void prime(int a)
 {
-    int i, flag;
+    int i, flag=0;    
     
-    for(i=2;i<a;i++)
-    {
-        (a%i==0)?flag==1:flag==0;
-    }
+    for(i=2;i<=a/2;i++)    
+    {    
+        if(a%i==0)    
+        { 
+            printf("\n %d is not prime.", a); 
+            printf("\n The smallest number it is divisible by is %d.", i);    
+            flag=1;    
+            break;
+        }    
+    }    
     
-    flag==0?printf("\n Non-Prime."):printf("\n Prime.");
+    if(flag==0)    
+    printf("\n %d is prime.", a);
 }
 
 void even(int a)
