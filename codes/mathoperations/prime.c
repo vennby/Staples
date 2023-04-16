@@ -1,20 +1,25 @@
-#include <stdio.h>
+#include <stdio.h>  
 
 int main()
-{
-    int a, i, flag;
+{    
+    int n, i, flag=0;    
     
-    printf("\n Enter a number: ");
-    scanf("%d", &a);
+    printf("\n Enter a number: ");    
+    scanf("%d", &n);
     
-    for(i=2;i<a;i++)
-    {
-        (a%i==0)?flag==0:flag==1;
-    }
+    for(i=2;i<=n/2;i++)    
+    {    
+        if(n%i==0)    
+        { 
+            printf("\n %d is not prime.", n); 
+            printf("\n The smallest number it is divisible by is %d.", i);    
+            flag=1;    
+            break;
+        }    
+    }    
     
-    (i==a)?flag=1:flag==0;
+    if(flag==0)    
+    printf("\n %d is prime.", n);     
     
-    flag==0?printf("\n Non-Prime."):printf("\n Prime.");
-    
-    return 0;
-}
+    return 0;  
+ } 
