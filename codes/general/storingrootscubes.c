@@ -1,3 +1,7 @@
+/* A more dynamic and intuitive approach to the question from the textbook:
+   Declare one array for storing the square roots of the integers from 0 through 10
+   and a second array for storing the cubes of the same integers.*/
+
 #include <stdio.h>
 
 int main()
